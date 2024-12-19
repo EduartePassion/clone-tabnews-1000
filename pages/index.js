@@ -1,5 +1,5 @@
 function Home() {
-    return <h1>Decifrando Filosóficamente!</h1>
+    return <h1>Decifre literariamente e filosóficamente!</h1>
 }
 
 export default Home;
