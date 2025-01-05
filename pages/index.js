@@ -71,7 +71,7 @@ export default function Home() {
         }
         h1,
         h2 {
-          color: #333;
+          color: #0000ff;
         }
         .poem {
           font-style: italic;
