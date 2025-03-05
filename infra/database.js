@@ -33,12 +33,6 @@ function getSSLValues() {
     };
 
   }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
   
->>>>>>> 35130a1 (add a more robust ssl configuration method)
->>>>>>> 62b92c9 (add a more robust ssl configuration method.)
-  return process.env.NODE_ENV === "development" ? false : true
+  return process.env.NODE_ENV === "development" ? false : true;
 }
