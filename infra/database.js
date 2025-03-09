@@ -8,7 +8,7 @@ async function query(queryObject) {
     database: process.env.POSTGRES_DB,
     password: process.env.POSTGRES_PASSWORD,
     ssl: getSSLValues(),
-    
+
   });
   
   try {
@@ -35,5 +35,5 @@ function getSSLValues() {
 
   }
 
-  return process.env.NODE_ENV === "development" ? false : true
+  return process.env.NODE_ENV === "development" ? false : true,
 }
