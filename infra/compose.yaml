@@ -5,3 +5,9 @@ services:
       - ../.env.development
     ports:
       - "5432:5432"
+
+
+  postgres-app:
+    image: postgres:latest
+    environment:
+      - POSTGRES_CA=${POSTGRES_CA}

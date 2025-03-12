@@ -29,7 +29,9 @@ async function status(request, response) {
         opened_connections: databaseOpenedConnectionsValue,
       },
     },
+
   });
+  
 }
 
 export default status;
