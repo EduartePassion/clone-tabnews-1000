@@ -24,5 +24,5 @@ function getSSLValues() {
   if (process.env.POSTGRES_CA) {
     return { ca: process.env.POSTGRES_CA };
   }
-  return { rejectUnauthorized: true };
+  return { rejectUnauthorized: false };
 }
