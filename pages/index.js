@@ -12,7 +12,6 @@ export default function Home() {
         <h1>Decifre Literária e Filosoficamente!</h1>
         <div className="poem">
           <h2>Insólito Momento</h2>
-
             <p>"Ela gentil, coração contente, encantadora.."</p>
             <p>"Ele com a mente longe... coração extraordinariamente acanhado"</p>
             <p>"Os olhos dele nos dela, mas não descortinavam a profundeza da sua sensibilidade"</p>
@@ -72,7 +71,7 @@ export default function Home() {
         }
         h1,
         h2 {
-          color: #0000ff;
+          color:rgb(46, 141, 185);
         }
         .poem {
           font-style: italic;
