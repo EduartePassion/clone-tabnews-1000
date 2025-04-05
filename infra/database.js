@@ -1,18 +1,21 @@
 import { Client } from 'pg';
+import dotenv from 'dotenv';
+
+dotenv.config({ path: '.env.development' }); // Adicionado
 
 async function query(queryObject) {
   let client;
   try {
-      client = await getNewClient();
-      const result = await client.query(queryObject);
-      return result;
-    } catch (error) {
-      console.error("Erro ao executar query:", error);
-      throw error;
-    } finally {
-      await client.end();
-    }
+    client = await getNewClient();
+    const result = await client.query(queryObject);
+    return result;
+  } catch (error) {
+    console.error("Erro ao executar query:", error);
+    throw error;
+  } finally {
+    await client.end();
   }
+}
 
 async function getNewClient() {
   const client = new Client({
@@ -28,18 +31,17 @@ async function getNewClient() {
   return client;
 }
 
-export default { 
+export default {
   query,
   getNewClient,
 };
 
 function getSSLValues() {
   if (process.env.POSTGRES_CA) {
-    return { 
+    return {
       ca: process.env.POSTGRES_CA,
     };
   }
 
-  
   return process.env.NODE_ENV === "production" ? true : false;
 }
