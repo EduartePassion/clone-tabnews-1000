@@ -1,6 +1,6 @@
-require('dotenv').config({ path: '.env.development' });
+require("dotenv").config({ path: ".env.development" });
 
-const { Client } = require('pg');
+const { Client } = require("pg");
 
 const client = new Client({
   host: process.env.POSTGRES_HOST,
@@ -10,11 +10,12 @@ const client = new Client({
   database: process.env.POSTGRES_DB,
 });
 
-client.connect()
+client
+  .connect()
   .then(() => {
-    console.log(' Conectado ao PostgreSQL com sucesso!');
+    console.log(" Conectado ao PostgreSQL com sucesso!");
     return client.end();
   })
-  .catch(err => {
-    console.error(' Erro ao conectar no PostgreSQL:', err);
+  .catch((err) => {
+    console.error(" Erro ao conectar no PostgreSQL:", err);
   });

@@ -12,15 +12,21 @@ export default function Home() {
         <h1>Decifre Literária e Filosoficamente!</h1>
         <div className="poem">
           <h2>Insólito Momento</h2>
-            <p>"Ela gentil, coração contente, encantadora.."</p>
-            <p>"Ele com a mente longe... coração extraordinariamente acanhado"</p>
-            <p>"Os olhos dele nos dela, mas não descortinavam a profundeza da sua sensibilidade"</p>
-            <p>"Desvaneceu-se seu cintilar dos olhos dele, deslumbrou-se seu sentir e o sentimento dele silenciou-se…"</p>
-            <p>"Exterminou-se mais um momento, mais um encanto"</p>
-            <p>"O que aconteceu! O que não aconteceu!"</p>
-            <p>"Já não importava mais…"</p>
-            <p>"É o enigma substancial da existência"</p>
-            <p>"E assim absorveram 'algo' num bom ou mau momento"</p>
+          <p>"Ela gentil, coração contente, encantadora.."</p>
+          <p>"Ele com a mente longe... coração extraordinariamente acanhado"</p>
+          <p>
+            "Os olhos dele nos dela, mas não descortinavam a profundeza da sua
+            sensibilidade"
+          </p>
+          <p>
+            "Desvaneceu-se seu cintilar dos olhos dele, deslumbrou-se seu sentir
+            e o sentimento dele silenciou-se…"
+          </p>
+          <p>"Exterminou-se mais um momento, mais um encanto"</p>
+          <p>"O que aconteceu! O que não aconteceu!"</p>
+          <p>"Já não importava mais…"</p>
+          <p>"É o enigma substancial da existência"</p>
+          <p>"E assim absorveram 'algo' num bom ou mau momento"</p>
         </div>
 
         <h2>Decifração Literária</h2>
@@ -71,7 +77,7 @@ export default function Home() {
         }
         h1,
         h2 {
-          color:rgb(46, 141, 185);
+          color: rgb(46, 141, 185);
         }
         .poem {
           font-style: italic;

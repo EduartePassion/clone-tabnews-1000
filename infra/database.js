@@ -1,7 +1,7 @@
-import { Client } from 'pg';
-import dotenv from 'dotenv';
+import { Client } from "pg";
+import dotenv from "dotenv";
 
-dotenv.config({ path: '.env.development' }); // Adicionado
+dotenv.config({ path: ".env.development" }); // Adicionado
 
 async function query(queryObject) {
   let client;
