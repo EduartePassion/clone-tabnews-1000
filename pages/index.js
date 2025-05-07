@@ -32,8 +32,8 @@ export default function Home() {
         <h2>Decifração Literária</h2>
         <ul>
           <li>
-            <strong>Título:</strong> Insólito momento sugere algo fora do
-            comum, singular, talvez inesperado.
+            <strong>Título:</strong> Insólito momento sugere algo fora do comum,
+            singular, talvez inesperado.
           </li>
           <li>
             <strong>Personagens:</strong>
