@@ -6,10 +6,10 @@ export class InternalServerError extends Error {
     this.name = "InternalServerError";
     this.action = "Entre em contato com o Suporte.";
     this.statusCode = 500;
-  } 
+  }
 
   toJSON() {
-    return{
+    return {
       name: this.name,
       message: this.message,
       action: this.action,
