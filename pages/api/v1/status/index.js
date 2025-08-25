@@ -1,7 +1,16 @@
+import { createRouter } from "next-connect";
 import database from "infra/database.js";
-import { InternalServerError } from "infra/errors";
+import controller from "infra/controller.js";
 
-async function status(request, response) {
+const router = createRouter();
+
+router.get(getHandler);
+
+export default router.handler(controller.errorHandlers);
+
+const { onError: onErrorHandler } = controller.errorHandlers;
+
+async function getHandler(request, response) {
   try {
     const updatedAt = new Date().toISOString();
 
@@ -33,15 +42,6 @@ async function status(request, response) {
       },
     });
   } catch (error) {
-    const publicErrorObject = new InternalServerError({
-      cause: error,
-    });
-
-    console.log("\n Erro dentro do controller:");
-    console.error(publicErrorObject);
-
-    response.status(500).json(publicErrorObject);
+    onErrorHandler(error, request, response);
   }
 }
-
-export default status;
