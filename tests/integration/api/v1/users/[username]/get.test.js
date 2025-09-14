@@ -98,7 +98,6 @@ describe("GET /api/v1/users/[username]", () => {
         action: "Verifique se o username está digitado corretamente.",
         status_code: 404,
       });
-
     });
   });
 });
