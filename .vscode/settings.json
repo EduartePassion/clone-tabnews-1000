@@ -1,3 +1,9 @@
 {
-  "cSpell.words": ["commitlint", "propriedades", "teste", "texto"]
+  "cSpell.words": [
+    "commitlint",
+    "propriedades",
+    "teste",
+    "texto",
+    "timestamptz"
+  ]
 }
