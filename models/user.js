@@ -37,8 +37,6 @@ async function create(userInputValues) {
   const newUser = await runInsertQuery(userInputValues);
   return newUser;
 
- 
-
   async function runInsertQuery(userInputValues) {
     const results = await database.query({
       text: `
@@ -146,10 +144,10 @@ async function validateUniqueEmail(email) {
   }
 }
 
- async function hashPasswordInObject(userInputValues) {
-    const hashedPassword = await password.hash(userInputValues.password);
-    userInputValues.password = hashedPassword;
-  }
+async function hashPasswordInObject(userInputValues) {
+  const hashedPassword = await password.hash(userInputValues.password);
+  userInputValues.password = hashedPassword;
+}
 
 const user = {
   create,
