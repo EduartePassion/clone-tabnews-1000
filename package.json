@@ -27,7 +27,7 @@
     "cookie": "1.0.2",
     "dotenv": "^16.4.4",
     "dotenv-expand": "^11.0.6",
-    "next": "^15.2.1",
+    "next": "15.2.6",
     "next-connect": "1.0.0",
     "node-pg-migrate": "^6.2.2",
     "pg": "^8.11.3",
